@@ -13,4 +13,4 @@ RUN apt-get update && apt-get install -y libssl-dev \
   && pip install -r requirements-dev.txt \
   && pip install -e .
 
-WORKDIR /app/code
+WORKDIR /app
