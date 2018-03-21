@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y libssl-dev \
   && echo py-solc >> requirements-dev.txt \
   && pip install -r requirements-dev.txt \
   && pip install -e . \
-  && python -m solc.install v0.4.19
+  && python -m solc.install v0.4.19 \
+  && ln -s $HOME/.py-solc/solc-v0.4.19/bin/solc /usr/local/bin/solc
 
 WORKDIR /app
