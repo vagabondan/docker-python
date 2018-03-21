@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y libssl-dev \
   && git clone https://github.com/ethereum/web3.py.git ./ \
   && git checkout tags/v3.16.5 \
   && echo amqpy >> requirements-dev.txt \
-  && echo solc >> requirements-dev.txt \
+  && echo py-solc >> requirements-dev.txt \
   && pip install -r requirements-dev.txt \
   && pip install -e .
 
