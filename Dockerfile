@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y libssl-dev \
   && echo amqpy >> requirements-dev.txt \
   && echo py-solc >> requirements-dev.txt \
   && pip install -r requirements-dev.txt \
-  && pip install -e .
+  && pip install -e . \
+  && python -m solc.install v0.4.19
 
 WORKDIR /app
