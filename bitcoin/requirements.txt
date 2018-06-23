@@ -35,7 +35,7 @@ pygobject
 pyOpenSSL
 pyserial
 python-apt
-python-bitcoinrpc==1.0.0
+python-bitcoinrpc==1.0
 python-xapp
 python-xlib
 pyxdg
