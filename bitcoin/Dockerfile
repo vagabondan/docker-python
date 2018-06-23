@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y libssl-dev wget \
   && git status \
   && cd .. \
   && cat docker-python/bitcoin/requirements.txt \
-  && pip install -r docker-python/bitcoin/requirements.txt \
+  && pip install -r docker-python/bitcoin/requirements.txt
 #  && pip install -r requirements.txt
 #  && pip install -e . 
 
