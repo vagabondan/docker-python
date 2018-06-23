@@ -4,9 +4,11 @@ FROM python:3.6
 # RUN mkdir -p /usr/src/app
 WORKDIR /src
 
+COPY . .
 # Install Linux dependencies
 RUN apt-get update && apt-get install -y libssl-dev wget \
   && apt install -y netcat-openbsd \
+#  && apt-get install -y python-apt python3-distutils-extra \
   && git clone https://github.com/vagabondan/docker-python.git \
   && cd docker-python \
   && pwd \
@@ -16,6 +18,7 @@ RUN apt-get update && apt-get install -y libssl-dev wget \
   && cd .. \
   && cat docker-python/bitcoin/requirements.txt \
   && pip install -r docker-python/bitcoin/requirements.txt \
-  && pip install -e . 
+#  && pip install -r requirements.txt
+#  && pip install -e . 
 
 WORKDIR /app

@@ -4,7 +4,6 @@ attrs
 certifi
 chardet
 click
-colorama
 configobj
 constantly
 cryptography
@@ -14,17 +13,11 @@ eth-utils
 hexbytes
 httplib2
 hyperlink
-idna
 pexpect
 pycrypto
-pycups
-pygobject
 pyOpenSSL
 pyserial
-python-apt
 python-bitcoinrpc==1.0
-python-xapp
-python-xlib
 requests
 requests-unixsocket
 setproctitle
